@@ -1,0 +1,30 @@
+﻿<Window x:Class="Diary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="NextBt" Content="Next" HorizontalAlignment="Left" Margin="525,334,0,0" VerticalAlignment="Top" Click="NextBt_Click" Height="50" Width="65"/>
+        <Button Name="PrevBt" Content="Previous" HorizontalAlignment="Left" Margin="413,334,0,0" VerticalAlignment="Top" Click="PrevBt_Click" Width="65" Height="50"/>
+        <Button Name="AddBt" Content="Add" HorizontalAlignment="Left" Margin="301,334,0,0" VerticalAlignment="Top" Click="AddBt_Click" Width="65" Height="50"/>
+        <Button Name="DeleteBt" Content="Delete" HorizontalAlignment="Left" Margin="190,334,0,0" VerticalAlignment="Top" Click="DeleteBt_Click" Width="65" Height="50"/>
+        <TextBlock Name="DateTx" HorizontalAlignment="Left" Margin="444,191,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" IsEnabled="False" Height="26" Width="124" TextAlignment="Center"/>
+        <TextBlock Name="TextTx" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="139" Width="224" IsEnabled="False" Margin="0,28,0,0" TextAlignment="Center"/>
+        <Label Name="PageNumLb" Content="Label" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center"/>
+
+        <Grid Name="PageCreateGrid" Visibility="Hidden" >
+
+            <Rectangle HorizontalAlignment="Center" Height="434" Stroke="Black" VerticalAlignment="Center" Width="798" Fill="White" StrokeThickness="0"/>
+            <TextBox Name="TextForPage" HorizontalAlignment="Left" Margin="225,0,0,0" TextWrapping="Wrap" Text=""  VerticalAlignment="Center" Width="548" Height="414"/>
+            <Button Name="AcceptCreateBt" Content="Accept" HorizontalAlignment="Left" Margin="80,336,0,0" VerticalAlignment="Top" Click="AcceptCreateBt_Click" Height="36" Width="66"/>
+            <Calendar Name="Calendar" HorizontalAlignment="Left" Margin="25,96,0,0" VerticalAlignment="Top" Height="161" Width="176"/>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>
